@@ -5,7 +5,8 @@ function sendMessageToBackground(message, data = null) {
         params: data
     };
 
-    browser.runtime.sendMessage(messageObject);
+    browser.runtime.sendMessage(messageObject)
+        .then((response) => {});
 }
 
 function receivedMessage(receivedMessage, sender, sendResponse) {
