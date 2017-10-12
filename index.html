@@ -6,6 +6,20 @@
     <title>WebExtensions</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" style="max-width: 400px">
+      <div>
+        <h1>Add & remove tabs</h1>
+        <button id="createTabButton">+</button>
+        <button id="removeTabButton">-</button>
+      </div>
+      <div>
+        <h1>Current tab id:</h1>
+        <b id="currentTabId"></b>
+      </div>
+      <div>
+        <h1>All tabs:</h1>
+        <ul id="allTabsList"></ul>
+      </div>
+    </div>
   <script type="text/javascript" src="./popup.js"></script></body>
 </html>
